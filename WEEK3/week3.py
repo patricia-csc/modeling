@@ -71,7 +71,7 @@ def integration(lambdas, data):
     partial_sum, partial_errs = [], []
     dhdl = anal_vba(lambdas, data)
     # loop over CVs
-    for i in range(0, len(data[0]) - 1):
+    for i in range(0, len(data) - 1):
         temp_sum, temp_err = 0, 0
         # loop over lambdas
         for j in range(0, len(lambdas) - 1):
